@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-nav">
+    <img src="BANK.svg" class="brand-logo" alt="Bank">
+    <div class="nav-items">
+        <span>BANK</span>
+        <span>BUSINESS</span>
+        <span>INVESTMENTS</span>
+        <span>INSURANCE</span>
+        <span>MOBILE</span>
+        <span>JOURNEYS</span>
+        <span>ENTERTAINMENT</span>
+    </div>
+    <button class="auth">LOG IN / SIGN IN</button>
+</header>
+
+<main class="container">
+    <h1 class="headline">Online currency converter</h1>
+
+    <section class="exchange">
+        <div class="block" data-type="from">
+            <span class="label">You have</span>
+
+            <div class="currency-group from-group">
+                <button class="unit">RUB</button>
+                <button class="unit active">USD</button>
+                <button class="unit">EUR</button>
+                <button class="unit">GBP</button>
+            </div>
+
+            <div class="input-area">
+                <input type="number" class="input-from">
+                <div class="info rate-from"></div>
+            </div>
+        </div>
+
+        <div class="block" data-type="to">
+            <span class="label">You want to receive</span>
+
+            <div class="currency-group to-group">
+                <button class="unit active">RUB</button>
+                <button class="unit">USD</button>
+                <button class="unit">EUR</button>
+                <button class="unit">GBP</button>
+            </div>
+
+            <div class="input-area">
+                <input type="number" class="input-to">
+                <div class="info rate-to"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
